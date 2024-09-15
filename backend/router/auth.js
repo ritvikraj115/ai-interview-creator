@@ -6,10 +6,10 @@ const Retell = require('retell-sdk');
 
 const router = express.Router();
 const openai = new OpenAI({
-  apiKey: 'sk-KIEEOiqKof10-FKq39pFBuO2_SkBPkptlR0Msqi694T3BlbkFJ4CGei82vtQxVW0w8kxFbytM1DP7x9eTrNer-72gSIA',
+  apiKey: process.env.OPENAI_KEY,
 });
 const retellClient = new Retell({
-  apiKey: 'key_0aa931aff9f9c94a0a867ec70400'
+  apiKey: process.env.RETELLAI_KEY
 });
 
 
