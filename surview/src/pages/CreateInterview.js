@@ -18,7 +18,7 @@ function CreateInterview() {
     try {
       // Call OpenAI to generate interview questions
       console.log(projectName);
-      const response = await axios.post('http://localhost:5000/generate-questions', {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/generate-questions`, {
         projectName,
         projectOffering,
         feedbackDesired,
