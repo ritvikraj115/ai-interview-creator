@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes,Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import OptionsPage from './pages/OptionsPage';
 import CreateInterview from './pages/CreateInterview';
 import InterviewLinkPage from './pages/InterviewLinkPage.js';
 import YourProjects from './pages/YourProjects.js';
@@ -14,7 +13,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />}></Route>
-        <Route path="/options" element={<OptionsPage />}></Route>
         <Route path="/create-interview" element={<CreateInterview />}></Route>
         <Route path="/interview-link" element={<InterviewLinkPage />}></Route>
         <Route path="/your-projects" element={<YourProjects />}></Route>
