@@ -31,13 +31,13 @@ function EditQuestions() {
     // Use an API call to save the questions in the backend
 
     // Example:
-    const response1=await fetch(`http://localhost:5000/user/${email}/projects/${projectId}/questions`, {
+    const response1=await fetch(`${process.env.REACT_APP_BACKEND_URL}/user/${email}/projects/${projectId}/questions`, {
       method: 'PUT',
       body: JSON.stringify({ questions }),
       headers: { 'Content-Type': 'application/json' },
     });
 
-    const response=await axios.post('http://localhost:5000/create-llm', {
+    const response=await axios.post(`${process.env.REACT_APP_BACKEND_URL}/create-llm`, {
         questions,
       });
       console.log(response.data.agent_id);
@@ -52,7 +52,7 @@ function EditQuestions() {
 
   useEffect(()=>{
     const fetchQuestions = async()=>{
-    const response= await axios.get(`http://localhost:5000/user/${email}/projects/${projectId}/questions`)
+    const response= await axios.get(`${process.env.REACT_APP_BACKEND_URL}/user/${email}/projects/${projectId}/questions`)
     
     const formattedQuestions = response.data.questions.map((question) => ({
         questionText: question.questionText
