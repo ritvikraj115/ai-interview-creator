@@ -37,7 +37,7 @@ function YourProjects() {
           ))}
         </ul>
       ) : (
-        <p>No projects found for this user.</p>
+        <p></p>
       )}
     </div>
   );
