@@ -26,11 +26,11 @@ function InterviewLinkPage() {
   };
 
   const createLLM=(async()=>{
-    const response=await axios.post('http://localhost:5000/create-llm', {
+    const response=await axios.post(`${process.env.REACT_APP_BACKEND_URL}/create-llm`, {
       questions,
     });
     console.log(response.data.agent_id);
-    const response1= await axios.post(`http://localhost:5000/user/${location.state.email}/projects`,{
+    const response1= await axios.post(`${process.env.REACT_APP_BACKEND_URL}/user/${location.state.email}/projects`,{
       projectName: location.state.projectName,
       questions: questions
 
