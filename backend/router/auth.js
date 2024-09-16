@@ -55,7 +55,7 @@ router.post('/generate-questions', async (req, res) => {
       messages: [
         {
           role: 'system',
-           content: `You're a UX researcher. You're tasked to come up with 6 to 8 questions based for "${projectName}" based on "${projectOffering}" and aligning with "${feedbackDesired}".
+           content: `You're a UX researcher. You're tasked to come up with 6 to 10 questions based for "${projectName}" based on "${projectOffering}" and aligning with "${feedbackDesired}".
 
 Keep in mind the friendly welcome has to be generic and relatable, so don't assume something here. Also keep the questions engaging, friendly.
 
@@ -566,10 +566,10 @@ Have you used [PRODUCT] before? Adoption Demographics Multiple Choice Block, Scr
 
 `
         },
-        {
-          role: 'user',
-          content: `The project name is "${projectName}". The project is offering "${projectOffering}". The desired feedback focuses on "${feedbackDesired}". Please generate a set of 2-3 interview questions following these fields, starting with general project-related questions and moving toward more specific feedback-driven questions.`,
-        },
+        // {
+        //   role: 'user',
+        //   content: `The project name is "${projectName}". The project is offering "${projectOffering}". The desired feedback focuses on "${feedbackDesired}". Please generate a set of 2-3 interview questions following these fields, starting with general project-related questions and moving toward more specific feedback-driven questions.`,
+        // },
       ],
       max_tokens: 500,  // Set the token limit high enough to generate multiple questions
       temperature: 0.7,  // Slightly creative but controlled
