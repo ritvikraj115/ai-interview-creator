@@ -90,7 +90,6 @@ const styles ={
       margin:'10px 10px auto',
       marginLeft:'20px',  
       padding: '0px 20px',
-      position:'fixed',
       backgroundColor:'black',
       borderRadius:'40px',
       border: '4px solid white'
@@ -104,13 +103,14 @@ const styles ={
     background: `url('https://img.freepik.com/free-vector/sound-wave-gray-digital-background-entertainment-technology_53876-119613.jpg') no-repeat center center fixed`, // Background image
     backgroundSize: 'cover', // Ensures the image covers the entire background
     color: 'black', // Text   color to ensure readability over the background
-    minHeight: '100vh', // Ensures the container takes up the full viewport height
+    minHeight: '100vh',
+    minWidth:'100vh' // Ensures the container takes up the full viewport height
   },
   container2: {
     backgroundColor: 'rgba(0, 0, 0, 0.3)', /* 50% opacity black background */
     color: 'white', /* Text color remains fully opaque */
     padding: '20px',
-    margin:'auto auto',
+    margin:'100px auto',
     fontFamily: 'Arial, sans-serif',
     display:'flex',
     flexDirection:'column',
@@ -121,7 +121,7 @@ const styles ={
     },
   
   inputt :{
-    width: '100vh',
+    width: '90vh',
     padding: '16px 20px',
     display:'block',
     margin: '13px auto',
