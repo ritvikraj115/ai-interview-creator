@@ -75,7 +75,8 @@ const styles ={
     background: `url('https://img.freepik.com/free-vector/sound-wave-gray-digital-background-entertainment-technology_53876-119613.jpg') no-repeat center center fixed`, // Background image
     backgroundSize: 'cover', // Ensures the image covers the entire background
     color: 'black', // Text   color to ensure readability over the background
-    minHeight: '100vh', // Ensures the container takes up the full viewport height
+    minHeight: '100em',
+    minWidth:'100vh' // Ensures the container takes up the full viewport height
   },
 
   container2: {
@@ -93,7 +94,7 @@ const styles ={
     },
   
   inputt :{
-    width: '80vh',
+    width: '40vh',
     padding: '12px 20px',
     display:'block',
     margin: '13px auto',
