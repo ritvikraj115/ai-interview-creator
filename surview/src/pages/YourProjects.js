@@ -45,15 +45,15 @@ function YourProjects() {
 
 const styles ={
     title: {
-      height:'250px',
-      width:'250px',
+      height:'350px',
+      width:'350px',
       fontWeight: 'bold',
       color:'white',
       display:'flex',
       flexDirection:'column',
       justifyContent:'center',
       alignItems:'center',
-      margin:'20px 25px',
+      margin:'75px 75px',
       padding: '2px auto',
       backgroundColor: 'rgba(0, 0, 0, 0.7)', /* 50% opacity black background */
       color: 'white',
@@ -68,7 +68,6 @@ const styles ={
         margin:'20px 20px auto',
         marginLeft:'20px',  
         padding: '0px 15px',
-        position:'fixed',
         backgroundColor:'black',
         borderRadius:'40px',
         border: '4px solid white'
@@ -82,12 +81,16 @@ const styles ={
       background: `url('https://img.freepik.com/free-vector/sound-wave-gray-digital-background-entertainment-technology_53876-119613.jpg') no-repeat center center fixed`, // Background image
       backgroundSize: 'cover', // Ensures the image covers the entire background
       color: 'black', // Text   color to ensure readability over the background
-      minHeight: '100vh', // Ensures the container takes up the full viewport height
+      minHeight: '100vh',
+      minWidth: '100vh'
+      // Ensures the container takes up the full viewport height
     },
     container2: {
-        margin:'auto',
+        margin:'20px auto',
+       
         fontFamily: 'Arial, sans-serif',
         display:'flex',
+        flexWrap: 'wrap',
         flexDirection:'row',
         padding:'0px 20px',
         alignItems:'center',
@@ -126,5 +129,6 @@ const styles ={
     
       }
   }
+
 
 export default YourProjects;
