@@ -621,6 +621,7 @@ router.post('/create-llm', async (req, res) => {
       llm_websocket_url: llmResponse.llm_websocket_url,  // Use the passed WebSocket URL from LLM creation
       voice_id: '11labs-Adrian',  // Define voice ID
       agent_name: 'Ryan',  // Agent name
+      interruption_sensitivity: 0.8,
     });
 
     res.status(200).json({
